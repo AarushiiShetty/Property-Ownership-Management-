@@ -1,0 +1,16 @@
+follow the order
+terminal 1: truffle comipile
+terminal 2: ganache-cli
+terminal 1: truffle migrate 
+after migrate: copy paste the build folder( which as abis)to frontend folder.
+next go to index.html and go live.
+metamask setup:
+metamaks password: aarushi@123
+ganache local network.
+create account using private keys( go to ganache terminal and find private keys)
+use them to import account
+use atmost 2 for showing proper transaction( u can use many as well).
+connect one acc.
+register : name and sq ft.
+fectch : land id.
+transfer: land id and  new owner address(etherum address).

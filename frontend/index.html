@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Land & Property Registry</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.7.5/dist/web3.min.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-green-100 min-h-screen font-sans">
+
+  <div class="max-w-3xl mx-auto py-12 px-6">
+    <h1 class="text-4xl font-bold text-center text-gray-800 mb-8 flex items-center justify-center gap-2">
+      🌍 Land & Property Registry
+    </h1>
+
+    <!-- Wallet & Land Actions -->
+    <div class="flex justify-center space-x-4 mb-6">
+      <button onclick="connectWallet()" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-xl shadow transition">Connect Wallet</button>
+    </div>
+
+    <!-- Register Land -->
+    <div class="bg-white p-4 rounded-lg shadow mb-4">
+      <h2 class="text-xl font-semibold mb-2">Register Land</h2>
+      <input id="regLocation" type="text" placeholder="Location" class="border p-2 w-full rounded mb-2">
+      <input id="regArea" type="number" placeholder="Area (sq ft)" class="border p-2 w-full rounded mb-2">
+      <button onclick="registerLand()" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded shadow">Register</button>
+    </div>
+
+    <!-- Transfer Land -->
+    <div class="bg-white p-4 rounded-lg shadow mb-4">
+      <h2 class="text-xl font-semibold mb-2">Transfer Land</h2>
+      <input id="transferId" type="number" placeholder="Land ID" class="border p-2 w-full rounded mb-2">
+      <input id="newOwner" type="text" placeholder="New Owner Address" class="border p-2 w-full rounded mb-2">
+      <button onclick="transferLand()" class="bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded shadow">Transfer</button>
+    </div>
+
+    <!-- Fetch Land -->
+    <div class="bg-white p-4 rounded-lg shadow mb-4">
+      <h2 class="text-xl font-semibold mb-2">Get Land Details</h2>
+      <input id="fetchId" type="number" placeholder="Land ID" class="border p-2 w-full rounded mb-2">
+      <button onclick="loadLandDetails(document.getElementById('fetchId').value)" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded shadow">Fetch Land</button>
+    </div>
+
+    <!-- Output Messages -->
+    <div id="output" class="bg-red-100 text-red-800 font-medium rounded-lg shadow p-4 mb-4 min-h-[60px] text-center"></div>
+
+    <!-- Land Details -->
+    <div id="landDetails" class="bg-white rounded-lg shadow p-4 text-gray-700 min-h-[60px] text-left">
+      <!-- Land details will show here -->
+    </div>
+  </div>
+
+</body>
+</html>
