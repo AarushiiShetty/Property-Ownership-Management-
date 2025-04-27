@@ -2,7 +2,7 @@ follow the order
 terminal 1: truffle comipile
 terminal 2: ganache-cli
 terminal 1: truffle migrate 
-after migrate: copy paste the build folder( which as abis)to frontend folder.
+after migrate: copy paste the build folder( which has abis)to frontend folder.
 next go to index.html and go live.
 metamask setup:
 metamaks password: your_password
