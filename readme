@@ -5,7 +5,7 @@ terminal 1: truffle migrate
 after migrate: copy paste the build folder( which as abis)to frontend folder.
 next go to index.html and go live.
 metamask setup:
-metamaks password: aarushi@123
+metamaks password: your_password
 ganache local network.
 create account using private keys( go to ganache terminal and find private keys)
 use them to import account
